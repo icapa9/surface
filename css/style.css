@@ -1,0 +1,255 @@
+body {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 90px;
+  line-height: 60px;
+  font-weight: 700px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+* {
+  outline: 1px solid green;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 1680px;
+}
+
+header {
+  margin-bottom: 100px;
+  height: 960px;
+  color: #ffffff;
+  background: url("../img/football.jpg") no-repeat;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header img {
+  display: block;
+}
+
+header .caption {
+  display: block;
+  font-size: 90px;
+  line-height: 100px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.download-btn {
+  margin: 0 auto;
+  width: 672px;
+}
+
+header .sports,
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sports {
+  text-align: right;
+}
+
+.sports li {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sports li:last-child {
+  margin-right: 120px;
+}
+
+.sports a {
+  font-size: 14px;
+  color: #564894;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.for {
+  float: right;
+}
+
+.app-store,
+.google-play {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 310px;
+  height: 77px;
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #5e42b0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.app-store {
+  margin-right: 52px;
+}
+
+.app-store span,
+.google-play span {
+  display: block;
+  font-weight: 700;
+}
+
+.progress h1 {
+  margin-bottom: 96px;
+}
+
+.progress h2 {
+  margin-bottom: 30px;
+}
+
+.progress p {
+  margin: 0;
+}
+
+.athlets {
+  margin-bottom: 112px;
+  box-sizing: border-box;
+}
+
+.athlets div,
+.athlets h1 {
+  padding-left: 830px;
+}
+
+.connection {
+  padding-right: 120px;
+  padding-bottom: 65px;
+}
+
+.collaboration {
+  padding-top: 65px;
+  padding-right: 120px;
+  padding-bottom: 65px;
+  background-color: #f6f4fa;
+}
+
+.growth {
+  padding-top: 90px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+  background-color: #5e42b0;
+}
+
+.players h1 {
+  padding-left: 208px;
+}
+
+.players .connection {
+  padding-left: 205px;
+  padding-right: 850px;
+}
+
+.players .collaboration {
+  padding-left: 205px;
+  padding-right: 850px;
+  background-color: #f5f6f7;
+}
+
+.players .growth {
+  padding-left: 205px;
+  padding-right: 850px;
+  background-color: #0a0e34;
+}
+
+.box-image,
+.box-features {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.box-image img {
+  display: block;
+  width: 842px;
+}
+
+.box-features {
+  margin-top: 260px;
+}
+
+.active h1 {
+  margin-bottom: 120px;
+}
+
+.active p {
+  width: 320px;
+}
+
+.contact h1 {
+  margin-bottom: 80px;
+}
+
+.contact p {
+  margin-bottom: 269px;
+  width: 360px;
+}
+
+.contact .box-image {
+  float: right;
+}
+
+.contact img {
+  width: 838px;
+}
+
+.work p {
+  width: 470px;
+}
+
+footer {
+  padding-top: 248px;
+  height: 960px;
+  color: #ffffff;
+  background: url("../img/stadium.jpg")
+}
+
+footer .download {
+  margin: 0 auto;
+  width: 800px;
+}
+
+footer .social {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .contacts {
+  float: right;
+}
+
+.contacts li {
+  display: inline-block;
+  vertical-align: top;
+}
