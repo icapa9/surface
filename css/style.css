@@ -24,13 +24,13 @@ h2 {
   text-transform: uppercase;
 }
 
-* {
-  outline: 1px solid green;
-}
-
 .wrap {
   margin: 0 auto;
   width: 1680px;
+}
+
+.header-wrap {
+  background: url("../img/football.jpg");
 }
 
 header {
@@ -39,7 +39,7 @@ header {
   margin-bottom: 100px;
   height: 960px;
   color: #ffffff;
-  background: url("../img/football.jpg") no-repeat;
+  background-color: rgba(10, 14, 52, 0.9);
 }
 
 .logo {
@@ -47,6 +47,17 @@ header {
   vertical-align: top;
   margin-top: 54px;
   margin-bottom: 296px;
+  width: 189px;
+  height: 33px;
+  background: url("../img/sprite.png") no-repeat -5px -872px;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .for {
@@ -68,14 +79,39 @@ header .caption {
   text-transform: uppercase;
 }
 
+.cap-1 {
+  position: relative;
+  z-index: 15;
+}
+
 .cap-2 {
   margin-bottom: 3px;
   text-align: right;
 }
 
+.cap-2::before {
+  position: absolute;
+  z-index: 10;
+  content: "";
+  top: 315px;
+  left: 555px;
+  width: 254px;
+  height: 317px;
+  background: url("../img/sprite.png") no-repeat -1712px -545px;
+}
+
 .download-btn {
   margin: 0 auto;
   width: 672px;
+}
+
+.download-btn a:hover {
+  color: #f8f515;
+  background-color: #4f42b0;
+}
+
+.download-btn a:active {
+  color: rgba(248, 245, 21, 0.3);
 }
 
 header .sports,
@@ -105,6 +141,14 @@ header .sports {
   color: #564894;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.sports a:hover {
+  opacity: 0.6;
+}
+
+.sports a:active {
+  opacity: 0.3;
 }
 
 .app-store,
@@ -144,7 +188,7 @@ header .sports {
   left: 30px;
   width: 33px;
   height: 37px;
-  background: url("../img/icon-apple.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat -1712px -5px;
 }
 
 .google-play::before {
@@ -154,7 +198,7 @@ header .sports {
   left: 50px;
   width: 36px;
   height: 39px;
-  background: url("../img/icon-googleplay.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat -1780px -5px;
 }
 
 .progress h1 {
@@ -162,6 +206,7 @@ header .sports {
 }
 
 .progress h2 {
+  position: relative;
   margin-bottom: 30px;
   color: #c1c1c1;
 }
@@ -180,10 +225,10 @@ header .sports {
   position: absolute;
   content: "";
   top: -28px;
-  left: 206px;
+  left: 180px;
   width: 696px;
   height: 950px;
-  background: url("../img/footballer.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat -1006px -5px;
 }
 
 .athlets div,
@@ -211,6 +256,52 @@ header .sports {
   background-color: #5e42b0;
 }
 
+.connection h2::before,
+.collaboration h2::before,
+.growth h2::before {
+  position: absolute;
+  content: "01";
+  top: 3px;
+  left: -30px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.collaboration h2::before {
+  content: "02";
+}
+
+.growth h2::before {
+  content: "03";
+}
+
+.players .growth h2::before {
+  content: "03";
+  color: #9173e6;
+}
+
+.connection h2::after,
+.collaboration h2::after,
+.growth h2::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: -30px;
+  width: 22px;
+  height: 5px;
+  background-color: #5e42b0;
+  border-radius: 10px;
+}
+
+.growth h2::after {
+  background-color: #efefef;
+}
+
+.players .growth h2::after {
+  background-color: #ffffff;
+}
+
 .players {
   position: relative;
 }
@@ -222,7 +313,7 @@ header .sports {
   right: 4px;
   width: 991px;
   height: 815px;
-  background: url("../img/basketballpl.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat -5px -5px;
 }
 
 .players h1 {
@@ -248,6 +339,7 @@ header .sports {
 
 .box-image,
 .box-features {
+  position: relative;
   display: inline-block;
   vertical-align: top;
 }
@@ -260,6 +352,70 @@ header .sports {
 .box-features {
   margin-top: 260px;
   margin-left: 130px;
+}
+
+.active,
+.contact,
+.work {
+  position: relative;
+}
+
+.box-number {
+  position: absolute;
+  z-index: 10;
+  top: 28%;
+  left: 50%;
+  margin-left: -84px;
+  width: 168px;
+  height: 155px;
+  background-color: #5e42b0;
+}
+
+.box-number::before {
+  position: absolute;
+  content: "01";
+  left: 50%;
+  margin-top: 63px;
+  margin-left: -8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #f5f6f7;
+}
+
+.contact .box-number::before {
+  content: "02";
+}
+
+.work .box-number::before {
+  content: "03";
+}
+
+.box-number::after {
+  position: absolute;
+  content: "";
+  top: 88px;
+  left: 50%;
+  margin-left: -8px;
+  width: 22px;
+  height: 5px;
+  background-color: #8f7bc8;
+  border-radius: 10px;
+}
+
+.box-features p {
+  position: relative;
+}
+
+.box-features p::after {
+  position: absolute;
+  content: "";
+  top: 180px;
+  left: 3px;
+  width: 22px;
+  height: 5px;
+  background-color: #5e42b0;
+  border-radius: 10px;
 }
 
 .active h1 {
@@ -287,7 +443,7 @@ header .sports {
 }
 
 .contact .box-features {
-  margin-left: 75px;
+  margin-left: 30px;
   margin-bottom: 251px;
 }
 
@@ -299,23 +455,34 @@ header .sports {
   width: 470px;
 }
 
+.footer-wrap {
+  background: url("../img/stadium.jpg");
+}
+
 footer {
   padding-top: 248px;
   color: #ffffff;
   height: 959px;
-  background: url("../img/stadium.jpg") no-repeat;
   box-sizing: border-box;
+  background-color: rgba(10, 14, 52, 0.9);
+}
+
+.footer-bar {
+  min-height: 168px;
+  background-color: rgba(10, 14, 52, 0.6);
 }
 
 footer .logo {
   margin: 0;
+  margin-top: 70px;
   margin-left: 50px;
+  margin-right: 500px;
 }
 
 footer .download {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 272px;
+  margin-bottom: 191px;
   padding-left: 167px;
   width: 920px;
 }
@@ -327,14 +494,18 @@ footer .download {
   left: 20px;
   width: 130px;
   height: 137px;
-  background: url("../img/logo-app.png") no-repeat;
+  background: url("../img/sprite.png") no-repeat -1860px -378px;
 }
 
 .download h1 {
+  position: relative;
+  z-index: 10;
   margin-bottom: 14px;
 }
 
 .download h2 {
+  position: relative;
+  z-index: 10;
   margin-bottom: 165px;
 }
 
@@ -342,19 +513,94 @@ footer .download-btn {
   margin-left: 35px;
 }
 
+footer .download-btn::before {
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 170px;
+  width: 138px;
+  height: 157px;
+  background: url("../img/sprite.png") no-repeat -1712px -378px;
+}
+
+footer .download-btn::after {
+  position: absolute;
+  content: "";
+  top: -120px;
+  left: 568px;
+  width: 275px;
+  height: 314px;
+  background: url("../img/sprite.png") no-repeat -1712px -54px;
+}
+
 footer .social {
   display: inline-block;
   vertical-align: top;
+  margin-top: 70px;
+}
+
+.social a:hover {
+  opacity: 0.6;
+}
+
+.social a:active {
+  opacity: 0.3;
+}
+
+.social li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.icon-fb {
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 27px;
+  background: url("../img/sprite.png") no-repeat -1755px -5px;
+}
+
+.icon-tw {
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 22px;
+  background: url("../img/sprite.png") no-repeat -1860px -5px;
+}
+
+.icon-ins {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 25px;
+  background: url("../img/sprite.png") no-repeat -1826px -5px;
 }
 
 footer .contacts {
   float: right;
+  margin-top: 72px;
   margin-right: 60px;
 }
 
 .contacts li {
+  position: relative;
   display: inline-block;
   vertical-align: top;
+}
+
+.contacts li:first-child {
+  margin-right: 16px;
+}
+
+.contacts li:first-child::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 126px;
+  width: 2px;
+  height: 15px;
+  background-color: #ffffff;
 }
 
 .contacts a {
@@ -362,4 +608,12 @@ footer .contacts {
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.contacts a:hover {
+  opacity: 0.6;
+}
+
+.contacts a:active {
+  opacity: 0.3;
 }
